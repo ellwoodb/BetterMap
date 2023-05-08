@@ -208,6 +208,7 @@ class SettingGui {
                 this.changed("customRoomColorUnknown", [64, 64, 64, 255])
                 this.changed("customRoomColorWitherDoor", [0, 0, 0, 255])
                 this.changed("customRoomGapSize", 9)
+                this.changed("customRoomSize", 20)
                 this.changed("customDoorSize", 15)
             })), 0.3, 0.4, 0.075)
             elm.addSidebarElement()
@@ -224,6 +225,7 @@ class SettingGui {
             elm.addColorSelector("Unknown Room Color", "customRoomColorUnknown", this.currentSettings.customRoomColorUnknown)
             elm.addColorSelector("Wither Door Color", "customRoomColorWitherDoor", this.currentSettings.customRoomColorWitherDoor)
             elm.addSlider("Gap Size", "customRoomGapSize", this.currentSettings.customRoomGapSize || 5, 2, 36)
+            elm.addSlider("Room Size", "customRoomSize", this.currentSettings.customRoomGapSize || 5, 2, 36)
             elm.addSlider("Door Width", "customDoorSize", this.currentSettings.customDoorWidth || 5, 2, 36)
         })
 

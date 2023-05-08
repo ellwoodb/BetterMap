@@ -164,6 +164,7 @@
                 255
             ],
             "customRoomGapSize": 17,
+            "customRoomSize": 20,
             "customDoorSize": 36
         },
         "Profile 2": {
@@ -328,6 +329,7 @@
                 255
             ],
             "customRoomGapSize": 9,
+            "customRoomSize": 20,
             "customDoorSize": 15
         },
         "random name profile": {
@@ -492,6 +494,7 @@
                 255
             ],
             "customRoomGapSize": 9,
+            "customRoomSize": 20,
             "customDoorSize": 15
         },
         "the coolest profile": {
@@ -656,6 +659,7 @@
                 0
             ],
             "customRoomGapSize": 2,
+            "customRoomSize": 20,
             "customDoorSize": 15
         }
     }

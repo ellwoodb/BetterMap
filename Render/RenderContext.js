@@ -302,6 +302,9 @@ class RenderContext {
     get customRoomGapSize() {
         return this.settings.customRoomGapSize;
     }
+    get customRoomSize() {
+        return this.settings.customRoomSize;
+    }
     get customDoorSize() {
         return this.settings.customDoorSize;
     }
@@ -330,6 +333,9 @@ class RenderContext {
 
     get roomSize() {
         switch (this.mapStyle) {
+            case 'custom':
+                //capped cause players could theoretically create infinite dungeon map image sizes and run out of memory
+                return Math.min(120, this.customRoomSize);
             case "legalmap":
                 return 36
             case "hypixelmap":
@@ -483,6 +489,7 @@ class RenderContext {
         customRoomColorUnknown = [64, 64, 64, 255],
         customRoomColorWitherDoor = [0, 0, 0, 255],
         customRoomGapSize = 9,
+        customRoomSize = 20,
         customDoorSize = 15,
         spinnyMap = false,
         centeredMap = false,
@@ -547,6 +554,7 @@ class RenderContext {
             customRoomColorUnknown,
             customRoomColorWitherDoor,
             customRoomGapSize,
+            customRoomSize,
             customDoorSize,
             spinnyMap,
             centeredMap
