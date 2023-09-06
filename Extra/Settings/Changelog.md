@@ -117,7 +117,22 @@ First released version!
 
 @ver v1.0.12
 ```diff
-+ add settings profile selection (thenose2003)
-+ add importing and exporting settings profiles (thenose2003)
-+ add spinny map for all the nons (thenose2003)
+! Fixed 300 score message never sending
+! Fixed incompatible dg cosmetics breaking stuff
+! Fixed last years april fools for next year
+```
+
+@ver v1.0.13
+```diff
+! Internal fix
+```
+
+@ver v1.0.14
+```diff
+! Fixed new sb level icons breaking player heads 
+```
+
+@ver v1.0.15
+```diff
+! Fixed score calc breaking from changed tab list
 ```
