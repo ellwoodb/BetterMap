@@ -1,4 +1,4 @@
-import { f, m } from("../../mappings/mappings");
+import { f, m } from "../../mappings/mappings";
 
 const { default: renderBeaconBeam2 } = require("../../BeaconBeam/index");
 const { numberWithCommas } = require("./Utils");
